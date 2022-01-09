@@ -1,7 +1,19 @@
 div#slider {
-  overflow: hidden;
+  overflow:hidden;
   margin: auto;
   width: 100%;
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px; } }
 
 }
 
@@ -17,6 +29,22 @@ div#slider div {
 div#slider div img {
 
   float: left;
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+      float: left; } }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+      float: left; } }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+      float: left; } }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px; 
+      float: left;} }
 }
 
 @keyframes slider {
